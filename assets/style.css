@@ -1,0 +1,215 @@
+/* this css before @media is for 576px */
+:root{
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+
+/* Below is for header html */
+h1.page-title{
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center; 
+    font-weight: bold;   
+}
+
+header nav {
+    background-color: aqua;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+header section{
+    text-align: center;
+    background-color: blue;
+}
+
+.image{
+    text-align: center;
+    background: blue;
+}
+
+.image-background{
+    padding-top: 3px;
+}
+
+.subtitle{
+    position: absolute;
+    bottom: 20px;
+    left: 240px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+/* Below is for main html */
+.nav-words{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.rounded-divider{
+    margin: 18px;
+    border-bottom: 6px solid black;
+}
+
+.about-me-words{
+    padding: 10px 20px 10px 20px;
+}
+
+h4{
+    font-weight: bold;
+}
+
+/* below is code for work section */
+/* container code is for all containers in html*/
+.container{
+    position:relative;
+}
+
+/* subtitle: how to make the words stick in place */
+.left-center{
+    position: absolute;
+    bottom: 50px;
+    left: 162px;
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+}
+
+.pictures-align{
+    text-align: center;
+}
+
+.work-images{
+    height: 125px;
+    width: 250px;
+    padding: 0px;
+    margin: 10px;
+    border: 5px solid lightblue;
+}
+
+/* Below is code for Contact Me */
+section ul{
+    text-decoration: underline;
+    position: absolute;
+    left: 20px;
+}
+
+.white-space{
+    padding-bottom: 50px;
+}
+
+/* for screen sizes of large smartphones */
+@media screen and (min-width: 768px) {
+    .page-title{
+        display: block;
+    }
+
+    .nav-text{
+        display: inline-block;
+    }
+
+   
+    .subtitle{
+        left: 550px;
+    }
+
+    .left-center{
+        left: 80px;
+    }
+
+    #first-image{
+        height: 400px;
+        width: 600px;
+    }
+
+    #group-boxes{
+        display: inline;
+    }
+
+    #four-boxes{
+        margin: 10px;
+        height: 150px;
+        width: 284px;
+    }
+
+    #book-subtitle{
+        left: 14px;
+    }
+
+    #cook-subtitle{
+        left: 14px;
+    }
+
+    #sports-subtitle{
+        left: 14px;
+    }
+
+    #batman-subtitle{
+        left: 14px;
+    }
+    
+    .info-inline{
+        display: inline;
+        margin: 20px;
+    }
+}
+
+/* for screen sizes of large smartphones */
+@media screen and (min-width: 992px) {
+
+    .page-title{
+        float: left;
+        padding: 30px;     
+    }
+    
+    .nav-text{
+        height: 40px;
+        padding-top: 20px;
+        text-align: right;
+    }
+
+    .image{
+        padding-top: 20px;
+    }
+
+    .subtitle{
+        left: 700px;
+        padding: 10px 55px 10px;
+    }
+    
+    #about-me{
+        display: inline;
+    }
+
+    .about-me-words{
+        display: inline;
+    }
+
+    #first-image{
+        height: 400px;
+        width: 625px;
+    }
+
+    #group-boxes{
+        margin: 10px;
+    }
+    
+    .left-center{
+        left: 180px;
+    }
+
+    #sports-subtitle{
+        left: 10px;
+    }
+
+}
