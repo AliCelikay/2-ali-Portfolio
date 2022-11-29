@@ -1,11 +1,78 @@
 /* this css before @media is for 576px */
-:root{
+/* :root{
     background-color: whitesmoke;
+    box-sizing: border-box;
+} */
+
+/* set a style for of all the elements of an HTML page '*' */
+* {
+    /* box-sizing sets how the total width and height of an element is calculated */
+    /* border-box account for any border and padding in the values you specify for an element's width and height */
     box-sizing: border-box;
 }
 
+/* brand color palette */
+:root {
+    --primary: rgba(68, 88, 119, 1);
+    --secondary: rgba(146, 204, 206, 1);
+    --tertiary: rgba(49, 52, 61, 1);
+    --dark: rgba(28, 29, 33, 1);
+    --light: rgba(238, 238, 247, 1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--light);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 /* Below is for header html */
-h1.page-title{
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* vertical alignment */
+    align-items: center;
+    background-color: var(--tertiary);
+    /* box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4); */
+}
+
+header h1 {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    padding: 5px 1% 5px 6%;
+    /* margin: 0; */
+    /* font-size: 4vw; */
+    /* line-height: 1; */
+}
+
+nav {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+
+
+
+/* h1.page-title{
     background-color: aliceblue;
     color: black;
     padding: 10px;
@@ -48,35 +115,36 @@ header section{
     padding: 10px;
     font-weight: bold;
     background-color: lightblue;
-}
+} */
+
 
 /* Below is for main html */
-.nav-words{
+.nav-words {
     padding: 10px;
     font-weight: bold;
 }
 
-.rounded-divider{
+.rounded-divider {
     margin: 18px;
     border-bottom: 6px solid black;
 }
 
-.about-me-words{
+.about-me-words {
     padding: 10px 20px 10px 20px;
 }
 
-h4{
+h4 {
     font-weight: bold;
 }
 
 /* below is code for work section */
 /* container code is for all containers in html*/
-.container{
-    position:relative;
+.container {
+    position: relative;
 }
 
 /* subtitle: how to make the words stick in place */
-.left-center{
+.left-center {
     position: absolute;
     bottom: 50px;
     left: 162px;
@@ -85,11 +153,11 @@ h4{
     padding: 10px;
 }
 
-.pictures-align{
+.pictures-align {
     text-align: center;
 }
 
-.work-images{
+.work-images {
     height: 125px;
     width: 250px;
     padding: 0px;
@@ -98,67 +166,67 @@ h4{
 }
 
 /* Below is code for Contact Me */
-section ul{
+section ul {
     text-decoration: underline;
     position: absolute;
     left: 20px;
 }
 
-.white-space{
+.white-space {
     padding-bottom: 50px;
 }
 
 /* for screen sizes of large smartphones */
 @media screen and (min-width: 768px) {
-    .page-title{
+    .page-title {
         display: block;
     }
 
-    .nav-text{
+    .nav-text {
         display: inline-block;
     }
 
-   
-    .subtitle{
+
+    .subtitle {
         left: 550px;
     }
 
-    .left-center{
+    .left-center {
         left: 80px;
     }
 
-    #first-image{
+    #first-image {
         height: 400px;
         width: 600px;
     }
 
-    #group-boxes{
+    #group-boxes {
         display: inline;
     }
 
-    #four-boxes{
+    #four-boxes {
         margin: 10px;
         height: 150px;
         width: 284px;
     }
 
-    #book-subtitle{
+    #book-subtitle {
         left: 14px;
     }
 
-    #cook-subtitle{
+    #cook-subtitle {
         left: 14px;
     }
 
-    #sports-subtitle{
+    #sports-subtitle {
         left: 14px;
     }
 
-    #batman-subtitle{
+    #batman-subtitle {
         left: 14px;
     }
-    
-    .info-inline{
+
+    .info-inline {
         display: inline;
         margin: 20px;
     }
@@ -167,48 +235,48 @@ section ul{
 /* for screen sizes of large smartphones */
 @media screen and (min-width: 992px) {
 
-    .page-title{
+    .page-title {
         float: left;
-        padding: 30px;     
+        padding: 30px;
     }
-    
-    .nav-text{
+
+    .nav-text {
         height: 40px;
         padding-top: 20px;
         text-align: right;
     }
 
-    .image{
+    .image {
         padding-top: 20px;
     }
 
-    .subtitle{
+    .subtitle {
         left: 700px;
         padding: 10px 55px 10px;
     }
-    
-    #about-me{
+
+    #about-me {
         display: inline;
     }
 
-    .about-me-words{
+    .about-me-words {
         display: inline;
     }
 
-    #first-image{
+    #first-image {
         height: 400px;
         width: 625px;
     }
 
-    #group-boxes{
+    #group-boxes {
         margin: 10px;
     }
-    
-    .left-center{
+
+    .left-center {
         left: 180px;
     }
 
-    #sports-subtitle{
+    #sports-subtitle {
         left: 10px;
     }
 
