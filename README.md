@@ -5,15 +5,10 @@ This application is my first attempt at making a portfolio for my projects. The 
 
 ## Table of Contents
 * [Usage](#usage)
-* [Screenshots](#screenshots)
 * [Contacts](#contacts)
 
 ## Usage
 Checkout my application: [Link](https://alicelikay.github.io/2-Challenge/) 
-
-## Screenshots
-![web browser](./assets/HW21.png)
-![web browser](./assets/Screenshot%20(89).png)
 
 ## Contacts
 ### GitHub: 
