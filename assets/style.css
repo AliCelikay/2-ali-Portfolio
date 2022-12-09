@@ -70,6 +70,35 @@ nav {
     flex-wrap: wrap;
 }
 
+nav a {
+    text-decoration: none;
+    /* Top and bottom   Right and left */
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    /* with out this the whole nav a tag becomes a block */
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+/* Main Body */
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
 
 
 /* h1.page-title{
